@@ -166,3 +166,251 @@
   border-radius: 9999px;
   font-size: 0.875rem;
 }
+
+
+
+/* Counter */
+.counter-widget {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.counter-widget h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  color: #2d7be5;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.counter-display {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 1.5rem;
+}
+
+.step-control {
+  margin-bottom: 2rem;
+}
+
+.step-control label {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.step-input {
+  width: 90px;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 1.5px solid #dbeafe;
+  text-align: center;
+  background: #f8fafc;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+  color: #000000;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn-increment {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn-decrement {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-reset {
+  background: #64748b;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.keyboard-help {
+  margin-bottom: 1.5rem;
+  color: #b3b3b3;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.keyboard-help small {
+  font-size: 1.05rem;
+}
+
+.history {
+  margin-top: 2rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.2rem 0.5rem;
+}
+
+.history h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.history-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.history-item {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.35rem 1.2rem;
+  font-size: 1.3rem;
+  color: #000000;
+  border: 1.5px solid #dbeafe;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+}
+
+
+/* StudentForm */
+.student-form {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.student-form h2 {
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form-group label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+  color: #000000;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3182ce;
+  outline: none;
+  background: #fff;
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #e53e3e;
+  background: #fff5f5;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.form-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+.btn.btn-primary {
+  background: #3182ce;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+}
+
+.btn.btn-primary:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.form-preview {
+  margin-top: 2rem;
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.preview-data {
+  font-size: 0.98rem;
+  color: #2d3748;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+small {
+  color: #64748b;
+  font-size: 0.92rem;
+}
+

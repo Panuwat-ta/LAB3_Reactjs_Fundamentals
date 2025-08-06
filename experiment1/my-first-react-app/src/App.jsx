@@ -2,9 +2,18 @@
 import { useState } from 'react'
 import Welcome from './components/Welcome'
 import StudentCard from './components/StudentCard'
+import Counter from './components/Counter'
+import StudentForm from './components/StudentForm'
 import './App.css'
 
 function App() {
+  // ✅ เพิ่ม useState และ handleStudentAdd
+  const [students, setStudents] = useState([])
+
+  const handleStudentAdd = (newStudent) => {
+    setStudents(prev => [...prev, newStudent])
+  }
+
   return (
     <>
       <div className="App">
@@ -39,7 +48,23 @@ function App() {
           />
 
           <h2 className='h2'>Practice 2.1: Interactive Components</h2>
-          
+          <Counter />
+
+          <h2 className='h2'>Practice 2.2: Form Handling</h2>
+          <StudentForm onStudentAdd={handleStudentAdd} />
+
+          <h2 className='h2'>รายชื่อนักศึกษาที่ลงทะเบียน</h2>
+
+          {students.length === 0 ? (
+            <p></p>
+          ) : (
+            <div className="student-list">
+              {students.map(student => (
+                <StudentCard key={student.id} student={student} />
+              ))}
+            </div>
+          )}
+
         </header>
       </div>
     </>
