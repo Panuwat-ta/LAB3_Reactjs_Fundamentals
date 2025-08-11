@@ -11,6 +11,15 @@ function App() {
     { id: 2, text: 'ทำ Mini Project', completed: false },
   ]);
 
+  // 🔽 เพิ่มฟังก์ชันนี้
+  const editTodo = (id, newText) => {
+    setTodos(
+      todos.map(todo =>
+        todo.id === id ? { ...todo, text: newText } : todo
+      )
+    );
+  };
+
   const addTodo = (text) => {
     const newTodo = {
       id: Date.now(),
@@ -37,8 +46,13 @@ function App() {
     <div className="app">
       <h1>My To-Do List</h1>
       <TodoForm addTodo={addTodo} />
-      {/* 🔽 ส่ง toggleTodo เป็น prop */}
-      <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />
+      {/* 🔽 ส่ง editTodo เป็น prop */}
+      <TodoList
+        todos={todos}
+        deleteTodo={deleteTodo}
+        toggleTodo={toggleTodo}
+        editTodo={editTodo}
+      />
     </div>
   );
 }
