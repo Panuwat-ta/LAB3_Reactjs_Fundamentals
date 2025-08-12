@@ -57,7 +57,7 @@ function About() {
           <div className="about-image">
             <div className="image-placeholder">
               <div className="placeholder-content">
-                <p>Your Photo Here</p>
+                <img src='https://i.pinimg.com/736x/ee/d8/16/eed816b0ae909e57e1dbf119ce10ad42.jpg' alt="Profile" className="profile-image" />
                 <small>Add your profile picture</small>
               </div>
             </div>
